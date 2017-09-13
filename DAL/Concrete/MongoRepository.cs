@@ -11,7 +11,7 @@ namespace DAL.Concrete
     /// Provides logic for CRUD operations in Mongo database.
     /// </summary>
     /// <owner>Aleksey Beletsky</owner>
-    /// <seealso cref="IMongoRepository" />
+    /// <seealso cref="IRepository" />
     public class MongoRepository<T> : IRepository<T> where T : MongoEntity
     {
         /// <summary>
