@@ -13,7 +13,7 @@ namespace DAL.Concrete
     [DataContract]
     [Serializable]
     [BsonIgnoreExtraElements(Inherited = true)]
-    public abstract class MongoEntity
+    public abstract class MongoEntity : IEntity
     {
         /// <summary>
         /// Gets or sets the identifier.

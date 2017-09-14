@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using DAL.Concrete;
 using DAL.Interface;
@@ -66,8 +65,7 @@ namespace TestProject.TestClass
         public void Run()
         {
             string connectionString = "mongodb://127.0.0.1:27017/Books";
-            var repository =
-                (IRepository<Book>)new MongoRepository<Book>(new ContextMongoDb(connectionString));
+            IRepository<Book> repository = new MongoRepository<Book>(new ContextMongoDb(connectionString));
 
             this.FillTheCollection(repository);
 

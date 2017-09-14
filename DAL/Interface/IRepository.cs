@@ -8,7 +8,7 @@ namespace DAL.Interface
     /// Provides interface for CRUD operations.
     /// </summary>
     /// <owner>Aleksey Beletsky</owner>
-    public interface IRepository<T>
+    public interface IRepository<T> where T : IEntity
     {
         /// <summary>
         /// Gets the entity with the specified identifier.
